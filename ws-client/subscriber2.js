@@ -1,3 +1,5 @@
+// This is example of standard queue subscription
+
 var Stomp = require('stompjs');
 var SockJS = require('sockjs-client');
 var url = 'http://localhost:8080/ws';
@@ -13,4 +15,6 @@ client.connect({}, function() {
     client.subscribe(destination, function(body, headers) {
       console.log('This is the body of a message on the subscribed queue:', body);
     });
+}, function(frame) {
+    console.log('disconnected...');
 });

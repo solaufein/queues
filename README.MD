@@ -1,5 +1,11 @@
 # STOMP websockets example
 
+### Requirements
+    - java 11
+    - gradle 6
+    - docker
+    - nodejs(npm)
+
 ### Activemq start
     ./activemq-start.sh
     
