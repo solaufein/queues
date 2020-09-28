@@ -29,7 +29,7 @@ public class StompController {
 
         simpMessagingTemplate.convertAndSendToUser(user, destination, message);
 
-        return ResponseEntity.ok("send1");
+        return ResponseEntity.ok("send1 - " + destination);
     }
 
     /**
@@ -46,7 +46,7 @@ public class StompController {
 
         simpMessagingTemplate.convertAndSend(destination, message);
 
-        return ResponseEntity.ok("send2");
+        return ResponseEntity.ok("send2 - " + destination);
     }
 
     /**
@@ -63,7 +63,7 @@ public class StompController {
 
         simpMessagingTemplate.convertAndSend(destination, message);
 
-        return ResponseEntity.ok("send3");
+        return ResponseEntity.ok("send3 - " + destination);
     }
 
     /**
@@ -80,7 +80,7 @@ public class StompController {
 
         simpMessagingTemplate.convertAndSend(destination, message);
 
-        return ResponseEntity.ok("send4");
+        return ResponseEntity.ok("send4 - " + destination);
     }
 
 }

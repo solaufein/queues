@@ -1,10 +1,8 @@
 // This is example of standard topic subscription
 
 var Stomp = require('stompjs');
-var SockJS = require('sockjs-client');
-var url = 'http://localhost:8080/ws';
-var ws = new SockJS(url);
-var client = Stomp.over(ws);
+var url = 'ws://localhost:8080/stomp/websocket';
+var client = Stomp.overWS(url);
 
 var user = '111';
 var destination = '/topic/hello';
