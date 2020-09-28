@@ -6,6 +6,12 @@
     - docker
     - nodejs(npm)
 
+### Install server
+    ./gradlew build
+ 
+### Install client
+    cd ws-client && npm install
+
 ### Activemq start
     ./activemq-start.sh
     
@@ -24,6 +30,5 @@
 - http://localhost:8080/chat/send4
 
 ### Subscribe to ws
-    cd ws-client
-    node subscriber.js
+    node ws-client/subscriber1.js
     
